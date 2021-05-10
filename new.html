@@ -31,20 +31,19 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-embedded_svc.settings.autoOpenPostChat = true;
 
 		embedded_svc.init(
-			'https://dellicm--moxiepoc.my.salesforce.com',
-			'https://moxiepoc-dell.cs14.force.com',
+			'https://customization-business-9969.cs10.my.salesforce.com',
+			'https://sandbox-customization-business-9969.cs10.force.com/liveAgentSetupFlow',
 			gslbBaseURL,
-			'00Dc0000003lKkM',
-			'Chat_Agent_Group',
+			'00DJ0000003gVxk',
+			'test_group',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-ord.salesforceliveagent.com/content',
-				deploymentId: '572c00000008Ol2',
-				buttonId: '573c00000008PAR',
-				baseLiveAgentURL: 'https://d.la1-c1cs-ord.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat_Agent_Group',
+				baseLiveAgentContentURL: 'https://c.la3-c1cs-phx.salesforceliveagent.com/content',
+				deploymentId: '572J00000008XqM',
+				buttonId: '573J00000008YiQ',
+				baseLiveAgentURL: 'https://d.la3-c1cs-phx.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'test_group',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -52,7 +51,7 @@ embedded_svc.settings.autoOpenPostChat = true;
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://dellicm--moxiepoc.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://customization-business-9969.cs10.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
